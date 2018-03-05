@@ -14,7 +14,7 @@ class App extends Component {
     GridModel.gridCreate();
 
     GridModel.addShip(new ShipModel(4, true));
-    GridModel.addShip(new ShipModel(3));
+    GridModel.addShip(new ShipModel(4));
     GridModel.addShip(new ShipModel(1));
     GridModel.addShip(new ShipModel(1));
 

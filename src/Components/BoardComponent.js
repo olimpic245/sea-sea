@@ -58,7 +58,7 @@ export default class BoardComponent extends Component {
   cellClick(x, y) {
     const key = `${x}::${y}`;
 
-    if (this.state.color[key]) {
+    if (this.state.color[key] || !this.state.shipCount) {
       return;
     }
 

@@ -170,12 +170,20 @@ class GridModel {
 
         canPlaceShape = true;
         if (ship.isShape) {
-          if (shapeDirection) {
-            posXShape = posX;
-            posYShape = posY + 1;
+          if (direction === 0) {
+            if (shapeDirection) {
+              posXShape = posX;
+              posYShape = posY + 1;
+            } else {
+              posXShape = maxPosX - 1;
+              posYShape = posY - 1;
+            }
+          } else if (shapeDirection) {
+            posXShape = posX - 1;
+            posYShape = maxPosY - 1;
           } else {
-            posXShape = maxPosX - 1;
-            posYShape = posY - 1;
+            posXShape = maxPosX + 1;
+            posYShape = posY;
           }
 
           if (this.isPointExist(posXShape, posYShape)) {
