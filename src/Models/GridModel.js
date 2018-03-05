@@ -147,7 +147,6 @@ class GridModel {
 
       let maxPosX;
       let maxPosY;
-      maxPosY = posY;
       if (direction === 0) {
         maxPosX = posX + shipSize;
         maxPosY = posY;
