@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+.TableItem{
+  display: inline-flex;
+  padding: 20px;
+}
+
+.Stats {
+  display : inline-block;
+}

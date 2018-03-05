@@ -1,0 +1,37 @@
+.Board {
+  display: flex;
+  flex-wrap: wrap;
+  height : 200px;
+  width : 200px;
+}
+
+.Item {
+  height: 18px;
+  width: 18px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.Reset {
+
+}
+
+.Sea {
+  background-color: lightskyblue;
+}
+
+.Miss {
+  background-color: #9da0a4;
+}
+
+.Kill {
+  background-color: red;
+}
+
+.Shot {
+  background-color: #f9cd0b;
+}
+
+button {
+  margin: 10px 0 10px 0;
+}
